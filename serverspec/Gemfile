@@ -1,0 +1,9 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+gem 'serverspec'
+# NOTE: serverspec内部で利用しているnet/sshにおいて以下のgemが別途installが必要なので追加
+gem 'ed25519'
+gem 'bcrypt_pbkdf'
+
