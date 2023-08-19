@@ -1,0 +1,11 @@
+---
+- hosts: target_node
+  become: yes
+  tasks:
+    - name: Install git
+      yum:
+        name: git
+        state: present
+        lock_timeout: 180
+
+
