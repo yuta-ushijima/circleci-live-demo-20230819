@@ -20,7 +20,7 @@ jobs:
           name: deploy CloudFormation
           command: |
             set -x
-            aws cloudformation deploy --template-name cloudformation/stack.yml --stack-name sampleStack
+            aws cloudformation deploy --template-file cloudformation/stack.yml --stack-name sampleStack
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
